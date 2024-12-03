@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Елки для всех!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cont">
+    <div class="col-start-2 lg:col-start-3 col-span-4 lg:col-span-2 flex flex-col">
+        <form class="flex flex-col">
+            <label class="text-center flex flex-col">
+                 Количество елок
+                 <input id="quantityInput" class="px-1 my-1" type="number"/>
+            </label>
+            <label class="text-center flex flex-col">
+                Товары
+                <label>
+                    Елка 180см
+                    <input value="product1" name="radio-type" type="radio">
+                </label>
+                <label>
+                    Елка 200см
+                    <input value="product2" name="radio-type" type="radio">
+                </label>
+                <label>
+                    Елка 230см
+                    <input value="product3" name="radio-type" type="radio">
+                </label>
+            </label>
+            <label class="flex flex-col items-center">
+                <label class="hidden flex-col items-center" for="select">
+                    Доп услуги
+                <select id="select" multiple>
+                    <option value="select1">покрыть искусственным снегом</option>
+                    <option value="select2">доставка елки</option>
+                    <option value="select3">доставка елки и установка</option>
+                    <option value="select4">доставка елки, установка и украшение</option>
+                </select>
+                </label>
+                <label class="hidden items-center text-center justify-center content-center justify-content-center">
+                    доп подставка нужна ?
+                    <input id="checkBox" value="checkbox" type="checkbox">
+                </label>
+            </label>
+        </form>
+        <div id="answerDiv" class="px-5 text-center bg-orange-200"></div>
+    </div>
+</div>
+</body>
+</html>
